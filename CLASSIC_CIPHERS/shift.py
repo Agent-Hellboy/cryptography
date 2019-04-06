@@ -1,7 +1,4 @@
 
-# coding: utf-8
-
-# In[5]:
 
 
 print("enter the plain text:")
