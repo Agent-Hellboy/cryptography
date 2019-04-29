@@ -4,8 +4,8 @@ def mod_mul(h,l,p):
     res=1
     while(l>0):
         if(l&1):
-            h=h*h%p
-        res=res*h%p
+            res=res*h%p
+        h=h*h%p
         l>>=1
     return res
 
@@ -50,7 +50,7 @@ def verifying():
     u2=r*w%q
     vp=mod_mul(g,u1,p)
     vpp=mod_mul(y,u2,p)
-    v=vp*vpp%q
+    v=((vp*vpp)%p)%q
     print(v,r)
     if(v==r):
         print("message verified")
