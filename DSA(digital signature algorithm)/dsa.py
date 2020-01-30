@@ -23,7 +23,7 @@ def setup():
     q=int(input())
     h=2
     g=mod_mul(h,int((p-1)/q),p)
-    print("enter a random integer")
+    print("enter a random integer which is a generator of class Zp*")
     x=int(input())
     y=mod_mul(g,x,p)
     return g,x,p,q,y
@@ -33,7 +33,7 @@ def signing():
     g,x,p,q,y=setup()
     print("enter message to sign")
     m=int(input())
-    print("enter a random integer")
+    print("enter a random integer which is ephimeral key")
     k=int(input())
     rp=mod_mul(g,k,p)
     r=rp%q
