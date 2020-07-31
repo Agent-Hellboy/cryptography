@@ -1,5 +1,5 @@
 # cryptography
-compilation of all classic cryptosystem 
+compilation of all the classic cryptosystem 
 
 
 ## Contributing
