@@ -48,7 +48,7 @@ def decryption(a, p, q):
     return plaintext
 
 
-# decide which answer to choose
+# Decide which answer to choose
 def choose(lst):
 
     for i in lst:
@@ -61,9 +61,8 @@ def choose(lst):
             return i
     return
 
+
 # Find SQROOT in Zp where p = 3 mod 4
-
-
 def sqrt_p_3_mod_4(a, p):
     r = pow(a, (p + 1) // 4, p)
     return r
@@ -92,10 +91,10 @@ def egcd(a, b):
 # Driver Function
 def main():
     bits = (int(input("Enter bit size: ")))
-    msg = input("Enter Message: ")
+    msg = (str(input("Enter Message: ")))
 
     if (len(sys.argv) > 1):
-        msg = str(sys.argv[1])
+        msg = (str(sys.argv[1]))
     if (len(sys.argv) > 2):
         bits = (int(sys.argv[2]))
 
